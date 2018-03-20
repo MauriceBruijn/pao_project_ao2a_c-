@@ -9,3 +9,6 @@ D:\Visual Studio documenten\Projecten\pao_mml\pao_mml\obj\Debug\pao_mml.exe
 D:\Visual Studio documenten\Projecten\pao_mml\pao_mml\obj\Debug\pao_mml.pdb
 D:\Visual Studio documenten\Projecten\pao_mml\pao_mml\bin\Debug\Newtonsoft.Json.dll
 D:\Visual Studio documenten\Projecten\pao_mml\pao_mml\bin\Debug\Newtonsoft.Json.xml
+D:\github\pao_project_ao2a_c-\pao_mml\bin\Debug\pao_mml.exe.config
+D:\github\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.exe
+D:\github\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.pdb
