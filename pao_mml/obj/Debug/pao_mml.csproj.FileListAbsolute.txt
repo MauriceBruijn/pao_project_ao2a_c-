@@ -12,3 +12,15 @@ D:\Visual Studio documenten\Projecten\pao_mml\pao_mml\bin\Debug\Newtonsoft.Json.
 D:\github\pao_project_ao2a_c-\pao_mml\bin\Debug\pao_mml.exe.config
 D:\github\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.exe
 D:\github\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.pdb
+D:\Deltion\PAO\applicatie\pao_project_ao2a_c-\pao_mml\bin\Debug\pao_mml.exe.config
+D:\Deltion\PAO\applicatie\pao_project_ao2a_c-\pao_mml\bin\Debug\pao_mml.exe
+D:\Deltion\PAO\applicatie\pao_project_ao2a_c-\pao_mml\bin\Debug\pao_mml.pdb
+D:\Deltion\PAO\applicatie\pao_project_ao2a_c-\pao_mml\bin\Debug\Newtonsoft.Json.dll
+D:\Deltion\PAO\applicatie\pao_project_ao2a_c-\pao_mml\bin\Debug\Newtonsoft.Json.xml
+D:\Deltion\PAO\applicatie\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.csprojResolveAssemblyReference.cache
+D:\Deltion\PAO\applicatie\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.Form1.resources
+D:\Deltion\PAO\applicatie\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.Properties.Resources.resources
+D:\Deltion\PAO\applicatie\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.csproj.GenerateResource.Cache
+D:\Deltion\PAO\applicatie\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.csproj.CoreCompileInputs.cache
+D:\Deltion\PAO\applicatie\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.exe
+D:\Deltion\PAO\applicatie\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.pdb

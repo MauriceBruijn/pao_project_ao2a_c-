@@ -36,26 +36,33 @@
             // 
             // dataGridView_products
             // 
+            this.dataGridView_products.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView_products.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView_products.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_products.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView_products.GridColor = System.Drawing.SystemColors.Control;
+            this.dataGridView_products.Location = new System.Drawing.Point(9, 10);
+            this.dataGridView_products.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView_products.Name = "dataGridView_products";
+            this.dataGridView_products.ReadOnly = true;
             this.dataGridView_products.RowTemplate.Height = 24;
-            this.dataGridView_products.Size = new System.Drawing.Size(977, 382);
+            this.dataGridView_products.Size = new System.Drawing.Size(733, 310);
             this.dataGridView_products.TabIndex = 1;
             // 
             // richTextBox_products
             // 
-            this.richTextBox_products.Location = new System.Drawing.Point(995, 12);
+            this.richTextBox_products.Location = new System.Drawing.Point(746, 10);
+            this.richTextBox_products.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.richTextBox_products.Name = "richTextBox_products";
-            this.richTextBox_products.Size = new System.Drawing.Size(359, 331);
+            this.richTextBox_products.Size = new System.Drawing.Size(270, 270);
             this.richTextBox_products.TabIndex = 2;
             this.richTextBox_products.Text = "";
             // 
             // button_convert
             // 
-            this.button_convert.Location = new System.Drawing.Point(995, 349);
+            this.button_convert.Location = new System.Drawing.Point(746, 284);
+            this.button_convert.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button_convert.Name = "button_convert";
-            this.button_convert.Size = new System.Drawing.Size(359, 45);
+            this.button_convert.Size = new System.Drawing.Size(269, 37);
             this.button_convert.TabIndex = 3;
             this.button_convert.Text = "CONVERT";
             this.button_convert.UseVisualStyleBackColor = true;
@@ -63,12 +70,13 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1366, 406);
+            this.ClientSize = new System.Drawing.Size(1033, 350);
             this.Controls.Add(this.button_convert);
             this.Controls.Add(this.richTextBox_products);
             this.Controls.Add(this.dataGridView_products);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_products)).EndInit();
