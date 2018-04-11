@@ -17,6 +17,10 @@ namespace pao_mml
 {
     public partial class Form1 : Form
     {
+        private object dsProducts;
+        ProductList p = new ProductList();
+
+
         public Form1()
         {
             InitializeComponent();
@@ -28,19 +32,29 @@ namespace pao_mml
         {
             using (var webClient = new WebClient())
             {
-                var json = webClient.DownloadString("https://mauricebruijn.nl/api/products/");
+                var Products = webClient.DownloadString("https://mauricebruijn.nl/api/products/");
 
-                richTextBox_products.Text = json;
+                p.Products = JsonConvert.DeserializeObject<BindingList<Product>>(Products);
+
+                dataGridView_products.DataSource = p.Products;
             }
         }
 
-        private void button_convert_Click(object sender, EventArgs e)
+        private void tbxSearch_TextChanged(object sender, EventArgs e)
         {
-            string json = richTextBox_products.Text;
-            
-            var deserialize = JsonConvert.DeserializeObject(json);
+            string text = tbxSearch.Text;
 
-            dataGridView_products.DataSource = deserialize;
+            var result = from x in p.Products
+                where
+                    x.name.Contains(text) ||
+                    x.brand.Contains(text) ||
+                    x.description.Contains(text) ||
+                    x.color.Contains(text) ||
+                    x.price.Contains(text)
+
+                select x;
+
+            dataGridView_products.DataSource = result.ToList<Product>();
         }
     }
 }
