@@ -24,3 +24,12 @@ D:\Deltion\PAO\applicatie\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.csproj.G
 D:\Deltion\PAO\applicatie\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.csproj.CoreCompileInputs.cache
 D:\Deltion\PAO\applicatie\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.exe
 D:\Deltion\PAO\applicatie\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.pdb
+D:\github\pao_project_ao2a_c-\pao_mml\bin\Debug\pao_mml.exe
+D:\github\pao_project_ao2a_c-\pao_mml\bin\Debug\pao_mml.pdb
+D:\github\pao_project_ao2a_c-\pao_mml\bin\Debug\Newtonsoft.Json.dll
+D:\github\pao_project_ao2a_c-\pao_mml\bin\Debug\Newtonsoft.Json.xml
+D:\github\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.csprojResolveAssemblyReference.cache
+D:\github\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.Form1.resources
+D:\github\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.Properties.Resources.resources
+D:\github\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.csproj.GenerateResource.Cache
+D:\github\pao_project_ao2a_c-\pao_mml\obj\Debug\pao_mml.ProductForm.resources

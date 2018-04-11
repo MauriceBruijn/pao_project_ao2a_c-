@@ -51,10 +51,19 @@ namespace pao_mml
                     x.description.Contains(text) ||
                     x.color.Contains(text) ||
                     x.price.Contains(text)
-
                 select x;
 
             dataGridView_products.DataSource = result.ToList<Product>();
+        }
+
+        private void dataGridView_products_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int rowindex = dataGridView_products.CurrentCell.RowIndex;
+            var result = dataGridView_products.Rows[rowindex].Cells[0].Value.ToString();
+
+            ProductForm product_form = new ProductForm();
+            product_form.Show();
+            product_form.Product(result);
         }
     }
 }
