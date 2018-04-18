@@ -12,6 +12,8 @@ namespace pao_mml
 {
     public partial class ProductForm : Form
     {
+        ProductList p = new ProductList();
+
         public ProductForm()
         {
             InitializeComponent();
@@ -19,6 +21,7 @@ namespace pao_mml
 
         public void Product(string result)
         {
+            //p.Products();
             richTextBox1.AppendText(result);
         }
     }
