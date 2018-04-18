@@ -14,15 +14,21 @@ namespace pao_mml
     {
         ProductList p = new ProductList();
 
-        public ProductForm()
+        public ProductForm(ProductList _p)
         {
             InitializeComponent();
+
+            p = _p;
         }
 
         public void Product(string result)
         {
-            //p.Products();
-            richTextBox1.AppendText(result);
+            var item = from x in p.Products
+                 where
+                     x.id.Contains(result)
+                 select x;
+
+            dataGridView1.DataSource = item.ToList<Product>();
         }
     }
 }

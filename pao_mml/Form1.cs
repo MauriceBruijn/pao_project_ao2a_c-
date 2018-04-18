@@ -17,9 +17,8 @@ namespace pao_mml
 {
     public partial class Form1 : Form
     {
-        private object dsProducts;
         ProductList p = new ProductList();
-
+        BindingList<Product> productsList;
 
         public Form1()
         {
@@ -61,7 +60,7 @@ namespace pao_mml
             int rowindex = dataGridView_products.CurrentCell.RowIndex;
             var result = dataGridView_products.Rows[rowindex].Cells[0].Value.ToString();
 
-            ProductForm product_form = new ProductForm();
+            ProductForm product_form = new ProductForm(p);
             product_form.Show();
             product_form.Product(result);
         }
