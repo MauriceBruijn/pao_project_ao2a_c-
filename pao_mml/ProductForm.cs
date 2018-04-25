@@ -28,7 +28,15 @@ namespace pao_mml
                      x.id.Contains(result)
                  select x;
 
-            dataGridView1.DataSource = item.ToList<Product>();
+            dataGridView_product.DataSource = item.ToList<Product>();
+
+            var product_picture = dataGridView_product.Rows[0].Cells[6].Value.ToString();
+            var product_description = dataGridView_product.Rows[0].Cells[5].Value.ToString();
+
+            pictureBox_product.ImageLocation = product_picture;
+            pictureBox_product.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            richTextBox_productDescription.AppendText(product_description);
         }
     }
 }

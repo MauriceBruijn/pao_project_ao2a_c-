@@ -30,28 +30,54 @@ namespace pao_mml
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridView_product = new System.Windows.Forms.DataGridView();
+            this.pictureBox_product = new System.Windows.Forms.PictureBox();
+            this.richTextBox_productDescription = new System.Windows.Forms.RichTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_product)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_product)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridView_product
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 13);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(593, 160);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView_product.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridView_product.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView_product.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_product.Location = new System.Drawing.Point(172, 12);
+            this.dataGridView_product.Name = "dataGridView_product";
+            this.dataGridView_product.RowTemplate.Height = 24;
+            this.dataGridView_product.Size = new System.Drawing.Size(823, 83);
+            this.dataGridView_product.TabIndex = 0;
+            // 
+            // pictureBox_product
+            // 
+            this.pictureBox_product.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox_product.Name = "pictureBox_product";
+            this.pictureBox_product.Size = new System.Drawing.Size(154, 165);
+            this.pictureBox_product.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_product.TabIndex = 1;
+            this.pictureBox_product.TabStop = false;
+            // 
+            // richTextBox_productDescription
+            // 
+            this.richTextBox_productDescription.Location = new System.Drawing.Point(172, 102);
+            this.richTextBox_productDescription.Name = "richTextBox_productDescription";
+            this.richTextBox_productDescription.Size = new System.Drawing.Size(660, 75);
+            this.richTextBox_productDescription.TabIndex = 2;
+            this.richTextBox_productDescription.Text = "";
             // 
             // ProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(629, 185);
-            this.Controls.Add(this.dataGridView1);
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ClientSize = new System.Drawing.Size(1007, 201);
+            this.Controls.Add(this.richTextBox_productDescription);
+            this.Controls.Add(this.pictureBox_product);
+            this.Controls.Add(this.dataGridView_product);
             this.Name = "ProductForm";
-            this.Text = "ProductForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Text = "PRODUCT";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_product)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_product)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -63,6 +89,8 @@ namespace pao_mml
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView_product;
+        private System.Windows.Forms.PictureBox pictureBox_product;
+        private System.Windows.Forms.RichTextBox richTextBox_productDescription;
     }
 }
