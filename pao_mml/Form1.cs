@@ -18,12 +18,16 @@ namespace pao_mml
     public partial class Form1 : Form
     {
         ProductList p = new ProductList();
-        BindingList<Product> productsList;
 
         public Form1()
         {
             InitializeComponent();
 
+            getApi();
+        }
+
+        private void button_refresh_Click(object sender, EventArgs e)
+        {
             getApi();
         }
 
@@ -47,7 +51,6 @@ namespace pao_mml
                 where
                     x.name.Contains(text) ||
                     x.brand.Contains(text) ||
-                    x.description.Contains(text) ||
                     x.color.Contains(text) ||
                     x.price.Contains(text)
                 select x;
@@ -63,6 +66,12 @@ namespace pao_mml
             ProductForm product_form = new ProductForm(p);
             product_form.Show();
             product_form.Product(result);
+        }
+
+        private void dataGridView_products_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            dataGridView_products.Columns[5].Visible = false;
+            dataGridView_products.Columns[6].Visible = false;
         }
     }
 }

@@ -45,23 +45,24 @@ namespace pao_mml
             this.dataGridView_product.Location = new System.Drawing.Point(172, 12);
             this.dataGridView_product.Name = "dataGridView_product";
             this.dataGridView_product.RowTemplate.Height = 24;
-            this.dataGridView_product.Size = new System.Drawing.Size(823, 83);
+            this.dataGridView_product.Size = new System.Drawing.Size(727, 58);
             this.dataGridView_product.TabIndex = 0;
+            this.dataGridView_product.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dataGridView_product_DataBindingComplete);
             // 
             // pictureBox_product
             // 
             this.pictureBox_product.Location = new System.Drawing.Point(12, 12);
             this.pictureBox_product.Name = "pictureBox_product";
-            this.pictureBox_product.Size = new System.Drawing.Size(154, 165);
+            this.pictureBox_product.Size = new System.Drawing.Size(154, 177);
             this.pictureBox_product.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox_product.TabIndex = 1;
             this.pictureBox_product.TabStop = false;
             // 
             // richTextBox_productDescription
             // 
-            this.richTextBox_productDescription.Location = new System.Drawing.Point(172, 102);
+            this.richTextBox_productDescription.Location = new System.Drawing.Point(172, 76);
             this.richTextBox_productDescription.Name = "richTextBox_productDescription";
-            this.richTextBox_productDescription.Size = new System.Drawing.Size(660, 75);
+            this.richTextBox_productDescription.Size = new System.Drawing.Size(727, 113);
             this.richTextBox_productDescription.TabIndex = 2;
             this.richTextBox_productDescription.Text = "";
             // 
@@ -70,10 +71,11 @@ namespace pao_mml
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1007, 201);
+            this.ClientSize = new System.Drawing.Size(911, 201);
             this.Controls.Add(this.richTextBox_productDescription);
             this.Controls.Add(this.pictureBox_product);
             this.Controls.Add(this.dataGridView_product);
+            this.MaximizeBox = false;
             this.Name = "ProductForm";
             this.Text = "PRODUCT";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_product)).EndInit();

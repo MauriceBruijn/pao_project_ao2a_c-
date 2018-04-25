@@ -38,5 +38,11 @@ namespace pao_mml
 
             richTextBox_productDescription.AppendText(product_description);
         }
+
+        private void dataGridView_product_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            dataGridView_product.Columns[5].Visible = false;
+            dataGridView_product.Columns[6].Visible = false;
+        }
     }
 }
