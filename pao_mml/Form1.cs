@@ -63,6 +63,12 @@ namespace pao_mml
             int rowindex = dataGridView_products.CurrentCell.RowIndex;
             var result = dataGridView_products.Rows[rowindex].Cells[0].Value.ToString();
 
+            dataGridView_products.Rows[rowindex].Cells[0].Style.BackColor = Color.Aqua;
+            dataGridView_products.Rows[rowindex].Cells[1].Style.BackColor = Color.Aqua;
+            dataGridView_products.Rows[rowindex].Cells[2].Style.BackColor = Color.Aqua;
+            dataGridView_products.Rows[rowindex].Cells[3].Style.BackColor = Color.Aqua;
+            dataGridView_products.Rows[rowindex].Cells[4].Style.BackColor = Color.Aqua;
+
             ProductForm product_form = new ProductForm(p);
             product_form.Show();
             product_form.Product(result);

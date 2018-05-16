@@ -51,6 +51,7 @@
             this.dataGridView_products.Name = "dataGridView_products";
             this.dataGridView_products.ReadOnly = true;
             this.dataGridView_products.RowTemplate.Height = 24;
+            this.dataGridView_products.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView_products.Size = new System.Drawing.Size(726, 240);
             this.dataGridView_products.TabIndex = 1;
             this.dataGridView_products.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_products_CellDoubleClick);
