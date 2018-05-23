@@ -70,8 +70,21 @@ namespace pao_mml
             dataGridView_products.Rows[rowindex].Cells[4].Style.BackColor = Color.Aqua;
 
             ProductForm product_form = new ProductForm(p);
-            product_form.Show();
+            product_form.Show(this);
             product_form.Product(result);
+        }
+
+        public void rowClosed(string id)
+        {
+           int abc =  int.Parse(id) - 1;
+
+            dataGridView_products.Rows[abc].Cells[0].Style.BackColor = Color.White;
+            dataGridView_products.Rows[abc].Cells[1].Style.BackColor = Color.White;
+            dataGridView_products.Rows[abc].Cells[2].Style.BackColor = Color.White;
+            dataGridView_products.Rows[abc].Cells[3].Style.BackColor = Color.White;
+            dataGridView_products.Rows[abc].Cells[4].Style.BackColor = Color.White;
+
+            dataGridView_products.Refresh();
         }
 
         private void dataGridView_products_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)

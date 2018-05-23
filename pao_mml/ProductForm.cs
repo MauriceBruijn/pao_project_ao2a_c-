@@ -12,6 +12,8 @@ namespace pao_mml
 {
     public partial class ProductForm : Form
     {
+        string id = null;
+
         ProductList p = new ProductList();
 
         public ProductForm(ProductList _p)
@@ -23,6 +25,8 @@ namespace pao_mml
 
         public void Product(string result)
         {
+            id = result;
+
             var item = from x in p.Products
                  where
                      x.id.Contains(result)
@@ -43,6 +47,14 @@ namespace pao_mml
         {
             dataGridView_product.Columns[5].Visible = false;
             dataGridView_product.Columns[6].Visible = false;
+        }
+
+        private void ProductForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            string id = dataGridView_product.Rows[0].Cells[0].Value.ToString();
+
+            Form1 parent = (Form1)Owner;
+            parent.rowClosed(id);
         }
     }
 }

@@ -78,6 +78,7 @@ namespace pao_mml
             this.MaximizeBox = false;
             this.Name = "ProductForm";
             this.Text = "PRODUCT";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ProductForm_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_product)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_product)).EndInit();
             this.ResumeLayout(false);
